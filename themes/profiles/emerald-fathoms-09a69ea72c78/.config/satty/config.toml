@@ -1,0 +1,24 @@
+# Screenshot annotation in the Emerald Fathoms palette. oldbook-screenshot opens each
+# capture here after the flash and shutter; Enter copies and closes, Escape
+# closes, Ctrl+S overwrites the capture with the annotated version.
+[general]
+fullscreen = false
+early-exit = true
+corner-roundness = 12
+initial-tool = "arrow"
+copy-command = "wl-copy"
+annotation-size-factor = 1.0
+save-after-copy = false
+default-hide-toolbars = false
+disable-notifications = true
+actions-on-enter = ["save-to-clipboard", "exit"]
+actions-on-escape = ["exit"]
+actions-on-right-click = ["save-to-clipboard"]
+
+[font]
+family = "Inter"
+style = "Bold"
+
+[color-palette]
+palette = ["#2f9e6e", "#bd8377", "#81cf77", "#6dadc7", "#a37fc7", "#bda177"]
+custom = ["#d6e7df", "#0a1712", "#6dcfb4", "#237351", "#846057", "#4d7d8d"]

@@ -1,0 +1,38 @@
+# Neon Afterimage: generated from this theme's Foot palette by oldbook-theme sync.
+# Edit the Foot colours, then rerun sync; this file is derived.
+copy-on-select = clipboard
+font-family = JetBrainsMono Nerd Font
+font-size = 9.5
+command = /bin/zsh
+window-padding-x = 10
+window-padding-y = 10
+window-decoration = server
+window-theme = dark
+custom-shader = ~/.config/ghostty/shaders/warm-bloom.glsl
+custom-shader = ~/.config/ghostty/shaders/cursor-smear.glsl
+custom-shader-animation = true
+
+background = 100D1C
+foreground = E8E4F1
+selection-background = 403c4b
+selection-foreground = ede9f4
+background-opacity = 0.9
+cursor-text = 100D1C
+cursor-color = 5DE4FF
+
+palette = 0=#100D1C
+palette = 1=#8a656a
+palette = 2=#62986a
+palette = 3=#449fb6
+palette = 4=#5581a0
+palette = 5=#7962a0
+palette = 6=#559893
+palette = 7=#9f9ba9
+palette = 8=#928e9c
+palette = 9=#c48e8e
+palette = 10=#89da8e
+palette = 11=#5DE4FF
+palette = 12=#75b8de
+palette = 13=#aa8ade
+palette = 14=#75dacb
+palette = 15=#E8E4F1

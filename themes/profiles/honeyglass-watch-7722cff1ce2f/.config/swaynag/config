@@ -1,0 +1,30 @@
+# Gruvbox confirmation bars: logout, reboot and shutdown ask here before acting.
+[warning]
+font=Inter Medium 11
+background=101B22
+text=E8DFC8
+border-bottom=D49A52
+border-bottom-size=3
+button-background=262f33
+button-border-size=0
+button-gap=8
+button-margin-right=10
+button-padding=8
+message-padding=12
+details-background=0c1419
+layer=overlay
+
+[error]
+font=Inter Medium 11
+background=101B22
+text=E8DFC8
+border-bottom=d78273
+border-bottom-size=3
+button-background=262f33
+button-border-size=0
+button-gap=8
+button-margin-right=10
+button-padding=8
+message-padding=12
+details-background=0c1419
+layer=overlay

@@ -1,0 +1,42 @@
+add_newline = false
+format = "$username$hostname$directory${custom.fossil}$git_branch$git_status$cmd_duration$line_break$character"
+
+[username]
+show_always = true
+style_user = "bold #2f9e6e"
+style_root = "bold #bd8377"
+format = "[$user]($style)"
+
+[hostname]
+ssh_only = false
+style = "#6dcfb4"
+format = "[@$hostname]($style) "
+
+[directory]
+style = "bold #d6e7df"
+truncation_length = 4
+truncate_to_repo = false
+read_only = " 󰌾"
+
+[git_branch]
+symbol = "󰘬 "
+style = "#a37fc7"
+
+[git_status]
+style = "#bda177"
+
+[cmd_duration]
+min_time = 500
+format = " [󱎫 $duration]($style)"
+style = "#6dadc7"
+
+[character]
+success_symbol = "[❯](bold #81cf77)"
+error_symbol = "[❯](bold #bd8377)"
+
+[custom.fossil]
+command = "fossil branch current"
+when = "fossil info >/dev/null 2>&1"
+format = " [󰜘 $output]($style)"
+style = "bold #2f9e6e"
+shell = ["sh"]

@@ -1,0 +1,58 @@
+/* Emerald Fathoms: shared GTK 3/4 semantic palette. */
+@define-color accent_bg_color #2f9e6e;
+@define-color accent_fg_color #07110d;
+@define-color accent_color #2f9e6e;
+@define-color window_bg_color #0a1712;
+@define-color window_fg_color #d6e7df;
+@define-color view_bg_color #07110d;
+@define-color view_fg_color #d6e7df;
+@define-color headerbar_bg_color #15221d;
+@define-color headerbar_fg_color #d6e7df;
+@define-color headerbar_border_color #37453f;
+@define-color headerbar_backdrop_color #0a1712;
+@define-color headerbar_shade_color rgba(7, 17, 13, 0.36);
+@define-color headerbar_darker_shade_color rgba(7, 17, 13, 0.9);
+@define-color card_bg_color #1e2c26;
+@define-color card_fg_color #d6e7df;
+@define-color card_shade_color rgba(7, 17, 13, 0.36);
+@define-color popover_bg_color #15221d;
+@define-color popover_fg_color #d6e7df;
+@define-color popover_shade_color rgba(7, 17, 13, 0.25);
+@define-color dialog_bg_color #15221d;
+@define-color dialog_fg_color #d6e7df;
+@define-color sidebar_bg_color #15221d;
+@define-color sidebar_fg_color #c2d2ca;
+@define-color sidebar_backdrop_color #0a1712;
+@define-color sidebar_shade_color rgba(7, 17, 13, 0.25);
+@define-color sidebar_border_color #37453f;
+@define-color thumbnail_bg_color #1e2c26;
+@define-color thumbnail_fg_color #d6e7df;
+@define-color destructive_bg_color #bd8377;
+@define-color destructive_fg_color #07110d;
+@define-color destructive_color #bd8377;
+@define-color success_bg_color #81cf77;
+@define-color success_fg_color #07110d;
+@define-color success_color #81cf77;
+@define-color warning_bg_color #2f9e6e;
+@define-color warning_fg_color #07110d;
+@define-color warning_color #2f9e6e;
+@define-color error_bg_color #bd8377;
+@define-color error_fg_color #07110d;
+@define-color error_color #bd8377;
+@define-color shade_color rgba(7, 17, 13, 0.25);
+@define-color scrollbar_outline_color #07110d;
+@define-color panel_bg_color #07110d;
+@define-color panel_fg_color #d6e7df;
+/* GTK applications that use the traditional theme color names. */
+@define-color theme_bg_color @window_bg_color;
+@define-color theme_fg_color @window_fg_color;
+@define-color theme_base_color @view_bg_color;
+@define-color theme_text_color @view_fg_color;
+@define-color theme_selected_bg_color @accent_bg_color;
+@define-color theme_selected_fg_color @accent_fg_color;
+@define-color insensitive_fg_color #84948d;
+@define-color borders #37453f;
+selection { background-color: #4b5a54; color: #deece5; }
+
+button, entry, popover > contents { border-radius: 4px; }
+button { padding: 3px 6px; }

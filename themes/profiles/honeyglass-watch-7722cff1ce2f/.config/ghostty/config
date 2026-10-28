@@ -1,0 +1,38 @@
+# Honeyglass Watch: generated from this theme's Foot palette by oldbook-theme sync.
+# Edit the Foot colours, then rerun sync; this file is derived.
+copy-on-select = clipboard
+font-family = JetBrainsMono Nerd Font
+font-size = 9.5
+command = /bin/zsh
+window-padding-x = 7
+window-padding-y = 7
+window-decoration = server
+window-theme = dark
+custom-shader = ~/.config/ghostty/shaders/warm-bloom.glsl
+custom-shader = ~/.config/ghostty/shaders/cursor-smear.glsl
+custom-shader-animation = true
+
+background = 101B22
+foreground = E8DFC8
+selection-background = 404647
+selection-foreground = ede5d3
+background-opacity = 0.9
+cursor-text = 101B22
+cursor-color = D49A52
+
+palette = 0=#101B22
+palette = 1=#976159
+palette = 2=#6f9559
+palette = 3=#957143
+palette = 4=#627e8f
+palette = 5=#865e8f
+palette = 6=#629582
+palette = 7=#9f9c90
+palette = 8=#929186
+palette = 9=#d78273
+palette = 10=#9cce73
+palette = 11=#D49A52
+palette = 12=#88acc3
+palette = 13=#bd7ec3
+palette = 14=#88ceaf
+palette = 15=#E8DFC8

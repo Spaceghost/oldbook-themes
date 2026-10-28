@@ -1,0 +1,13 @@
+# Same configurable colors as the Oldbook qt6ct Emerald Fathoms palette.
+# Selectable in LXQt Appearance; active settings live in lxqt/lxqt.conf.
+[Palette]
+base_color=#07110d
+highlight_color=#2f9e6e
+highlighted_text_color=#07110d
+link_color=#6dadc7
+link_visited_color=#a37fc7
+text_color=#d6e7df
+tooltip_base_color=#15221d
+tooltip_text_color=#d6e7df
+window_color=#0a1712
+window_text_color=#d6e7df

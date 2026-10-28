@@ -1,0 +1,13 @@
+# Same configurable colors as the Oldbook qt6ct Copper Hush palette.
+# Selectable in LXQt Appearance; active settings live in lxqt/lxqt.conf.
+[Palette]
+base_color=#0c151b
+highlight_color=#D56B4B
+highlighted_text_color=#0c151b
+link_color=#88a5c1
+link_visited_color=#bd77c1
+text_color=#E8D9B8
+tooltip_base_color=#1c272c
+tooltip_text_color=#E8D9B8
+window_color=#101D24
+window_text_color=#E8D9B8

@@ -1,0 +1,38 @@
+# Brineglass Vigil: generated from this theme's Foot palette by oldbook-theme sync.
+# Edit the Foot colours, then rerun sync; this file is derived.
+copy-on-select = clipboard
+font-family = JetBrainsMono Nerd Font
+font-size = 9.5
+command = /bin/zsh
+window-padding-x = 10
+window-padding-y = 10
+window-decoration = server
+window-theme = dark
+custom-shader = ~/.config/ghostty/shaders/warm-bloom.glsl
+custom-shader = ~/.config/ghostty/shaders/cursor-smear.glsl
+custom-shader-animation = true
+
+background = 101B24
+foreground = E4DDD0
+selection-background = 3f464a
+selection-foreground = e9e4d9
+background-opacity = 0.9
+cursor-text = 101B24
+cursor-color = B86B58
+
+palette = 0=#101B24
+palette = 1=#955c5a
+palette = 2=#6c905a
+palette = 3=#825147
+palette = 4=#5e7991
+palette = 5=#835a91
+palette = 6=#5e9083
+palette = 7=#9c9b96
+palette = 8=#8f8f8b
+palette = 9=#d37b74
+palette = 10=#97c774
+palette = 11=#B86B58
+palette = 12=#83a5c4
+palette = 13=#b977c4
+palette = 14=#83c7b0
+palette = 15=#E4DDD0

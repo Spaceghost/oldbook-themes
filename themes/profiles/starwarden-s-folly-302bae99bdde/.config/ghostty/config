@@ -1,0 +1,38 @@
+# Starwarden’s Folly: generated from this theme's Foot palette by oldbook-theme sync.
+# Edit the Foot colours, then rerun sync; this file is derived.
+copy-on-select = clipboard
+font-family = JetBrainsMono Nerd Font
+font-size = 9.5
+command = /bin/zsh
+window-padding-x = 8
+window-padding-y = 8
+window-decoration = server
+window-theme = dark
+custom-shader = ~/.config/ghostty/shaders/warm-bloom.glsl
+custom-shader = ~/.config/ghostty/shaders/cursor-smear.glsl
+custom-shader-animation = true
+
+background = 111827
+foreground = E8E1D2
+selection-background = 40444d
+selection-foreground = ede7db
+background-opacity = 0.9
+cursor-text = 111827
+cursor-color = B86B4B
+
+palette = 0=#111827
+palette = 1=#955b5a
+palette = 2=#6c8f5a
+palette = 3=#83503f
+palette = 4=#5f7890
+palette = 5=#835990
+palette = 6=#5f8f83
+palette = 7=#9f9d98
+palette = 8=#92918e
+palette = 9=#d37b72
+palette = 10=#97c772
+palette = 11=#B86B4B
+palette = 12=#83a5c1
+palette = 13=#b977c1
+palette = 14=#83c7ae
+palette = 15=#E8E1D2

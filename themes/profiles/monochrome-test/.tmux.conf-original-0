@@ -1,0 +1,26 @@
+# Keep personal controls independent of theme colors and plugin managers.
+source-file "$HOME/.config/tmux/oldbook.conf"
+
+set -g default-terminal "tmux-256color"
+set -ag terminal-overrides ",xterm-256color:RGB"
+set -g status-position top
+set -g status-style "bg=#000000,fg=#ffffff"
+set -g message-style "bg=#ffffff,fg=#ffffff"
+set -g pane-border-style "fg=#ffffff"
+set -g pane-active-border-style "fg=#ffffff"
+set -g status-left "#[fg=#ffffff,bold] 󰆍 #S #[default]"
+set -g status-right "#[fg=#ffffff]#(whoami)@#H #[fg=#ffffff]%a %d %b %H:%M "
+set -g status-left-length 32
+set -g status-right-length 60
+setw -g window-status-format " #[fg=#ffffff]#I:#W "
+setw -g window-status-current-format "#[bg=#ffffff,fg=#ffffff,bold] #I:#W #[default]"
+set -g clock-mode-colour "#ffffff"
+set -g mode-style "bg=#ffffff,fg=#ffffff"
+
+# Select the pane under the pointer without clicking.
+set -g mouse on
+set -g focus-follows-mouse on
+
+# Forward the active pane title to Sway and the workspace decoration.
+set -g set-titles on
+set -g set-titles-string "#{pane_title}"

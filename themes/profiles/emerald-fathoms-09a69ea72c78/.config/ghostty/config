@@ -1,0 +1,38 @@
+# Emerald Fathoms: generated from this theme's Foot palette by oldbook-theme sync.
+# Edit the Foot colours, then rerun sync; this file is derived.
+copy-on-select = clipboard
+font-family = JetBrainsMono Nerd Font
+font-size = 9.5
+command = /bin/zsh
+window-padding-x = 6
+window-padding-y = 6
+window-decoration = server
+window-theme = dark
+custom-shader = ~/.config/ghostty/shaders/warm-bloom.glsl
+custom-shader = ~/.config/ghostty/shaders/cursor-smear.glsl
+custom-shader-animation = true
+
+background = 0a1712
+foreground = d6e7df
+selection-background = 37453f
+selection-foreground = deece5
+background-opacity = 0.9
+cursor-text = 0a1712
+cursor-color = 2f9e6e
+
+palette = 0=#0a1712
+palette = 1=#846057
+palette = 2=#5b9457
+palette = 3=#237351
+palette = 4=#4d7d8d
+palette = 5=#725e8d
+palette = 6=#4d9480
+palette = 7=#91a099
+palette = 8=#84948d
+palette = 9=#bd8377
+palette = 10=#81cf77
+palette = 11=#2f9e6e
+palette = 12=#6dadc7
+palette = 13=#a37fc7
+palette = 14=#6dcfb4
+palette = 15=#d6e7df

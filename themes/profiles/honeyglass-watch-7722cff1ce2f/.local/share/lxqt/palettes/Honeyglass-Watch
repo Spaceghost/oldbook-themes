@@ -1,0 +1,13 @@
+# Same configurable colors as the Oldbook qt6ct Honeyglass Watch palette.
+# Selectable in LXQt Appearance; active settings live in lxqt/lxqt.conf.
+[Palette]
+base_color=#0c1419
+highlight_color=#D49A52
+highlighted_text_color=#0c1419
+link_color=#88acc3
+link_visited_color=#bd7ec3
+text_color=#E8DFC8
+tooltip_base_color=#1c262b
+tooltip_text_color=#E8DFC8
+window_color=#101B22
+window_text_color=#E8DFC8

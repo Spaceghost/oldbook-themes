@@ -1,0 +1,38 @@
+# Copper Hush: generated from this theme's Foot palette by oldbook-theme sync.
+# Edit the Foot colours, then rerun sync; this file is derived.
+copy-on-select = clipboard
+font-family = JetBrainsMono Nerd Font
+font-size = 9.5
+command = /bin/zsh
+window-padding-x = 10
+window-padding-y = 10
+window-decoration = server
+window-theme = dark
+custom-shader = ~/.config/ghostty/shaders/warm-bloom.glsl
+custom-shader = ~/.config/ghostty/shaders/cursor-smear.glsl
+custom-shader-animation = true
+
+background = 101D24
+foreground = E8D9B8
+selection-background = 404645
+selection-foreground = ede1c6
+background-opacity = 0.88
+cursor-text = 101D24
+cursor-color = D56B4B
+
+palette = 0=#101D24
+palette = 1=#985d59
+palette = 2=#6f9159
+palette = 3=#96523f
+palette = 4=#62798f
+palette = 5=#865a8f
+palette = 6=#629182
+palette = 7=#9f9986
+palette = 8=#928e7d
+palette = 9=#d87b72
+palette = 10=#9cc772
+palette = 11=#D56B4B
+palette = 12=#88a5c1
+palette = 13=#bd77c1
+palette = 14=#88c7ae
+palette = 15=#E8D9B8

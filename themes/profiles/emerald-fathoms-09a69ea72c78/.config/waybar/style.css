@@ -1,0 +1,178 @@
+/* Space Ghost × Emerald Fathoms control deck. GTK CSS, intentionally built for stock Waybar. */
+@import url("waybar-state.css");  /* fullscreen dimming, written by oldbook-waybar-dim */
+@define-color oldbook_workspace_active #deece5;
+@define-color oldbook_workspace_secondary #91a099;
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font", "Symbols Nerd Font", sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    min-height: 0;
+}
+window#waybar { background: transparent; color: #d6e7df; }
+.modules-left, .modules-right {
+    background: linear-gradient(180deg, rgba(30, 44, 38, 0.98), rgba(7, 17, 13, 0.98));
+    border: none;
+    border-radius: 18px;
+    box-shadow: 0 4px 12px rgba(7, 17, 13, 0.55);
+    margin-bottom: 5px;
+}
+.modules-center { background: transparent; margin: 0 8px; padding: 0; }
+.modules-right { padding: 0 5px; }
+#custom-ghost {
+    font-family: "Symbols Nerd Font", "JetBrainsMono Nerd Font", sans-serif;
+    font-size: 21px;
+    min-width: 36px;
+    color: #fff6ff;
+    background: linear-gradient(135deg, #b765eb, #77369e 60%, #ce579e);
+    text-shadow: 0 0 5px #e3baff;
+    border-radius: 12px;
+    margin: 3px 5px 3px 3px;
+    padding: 0;
+}
+#custom-ghost:hover { background: linear-gradient(135deg, #d997ff, #a355d7 65%, #f284bd); }
+#workspaces { margin: 3px 5px 3px 0; }
+#workspaces button { padding: 0 7px; margin: 1px 1px; border-radius: 11px; color: #91a099; transition: all 180ms ease-in-out; }
+#workspaces button.empty { color: #6a7a73; }
+#workspaces button:hover { background: #37453f; color: #deece5; box-shadow: none; }
+#workspaces button.focused {
+    background: linear-gradient(110deg, alpha(#2f9e6e, .22), alpha(#2f9e6e, .10));
+    color: @oldbook_workspace_active;
+    font-weight: 400;
+    box-shadow: none;
+}
+#workspaces button.urgent { background: #846057; color: #deece5; }
+#custom-ai { color: #2f9e6e; padding: 0 10px; margin: 4px 4px 4px 0; border-radius: 11px; }
+#custom-ai:hover { background: #37453f; color: #deece5; }
+#custom-ai.idle { color: #84948d; }
+#custom-ai.complete { color: #81cf77; background: #182b1c; }
+#custom-ai.attention { color: #deece5; background: #5f4a42; }
+#mode { color: #bda177; padding: 0 9px; }
+#mpris { color: #6dcfb4; padding: 0 7px; font-size: 10px; }
+#mpris.paused { color: #91a099; }
+#mpris.previous, #mpris.next { font-size: 15px; padding: 0 8px; }
+#mpris:hover { background: rgba(109, 207, 180, 0.16); }
+/* Optional transmission meter beside the music controls; silent frames collapse it. */
+#custom-cava { color: #6dcfb4; padding: 0 6px; margin: 0 2px; font-size: 10px; }
+#custom-cava.silent { padding: 0; margin: 0; }
+#cpu, #memory, #temperature, #disk, #custom-link, #custom-ssh, #custom-radio, #custom-firewall,
+#pulseaudio, #battery, #backlight, #idle_inhibitor, #custom-notifications, #clock, #tray {
+    padding: 0 8px;
+    margin: 4px 0;
+    border-radius: 11px;
+}
+#cpu { color: #a37fc7; }
+#memory, #disk { color: #91a099; }
+#temperature { color: #bda177; }
+#temperature.critical { color: #bd8377; background: #1c221c; }
+#custom-link { color: #6dadc7; }
+#custom-link.offline, #custom-radio.blocked { color: #84948d; }
+#custom-ssh.disabled { color: #84948d; }
+#custom-ssh.tailnet { color: #6dadc7; }
+#custom-ssh.lan { color: #81cf77; background: rgba(129, 207, 119, 0.12); }
+#custom-ssh.warning { color: #2f9e6e; }
+#custom-radio { color: #6dcfb4; }
+#custom-firewall.staged { color: #2f9e6e; }
+#custom-firewall.running { color: #81cf77; }
+#pulseaudio { color: #d6e7df; }
+#pulseaudio.muted { color: #6a7a73; }
+#battery { color: #d6e7df; }
+#battery.charging, #battery.plugged { color: #81cf77; }
+#battery.warning { color: #2f9e6e; }
+#battery.critical { color: #deece5; background: #5f4a42; animation: distress 1s ease-in-out infinite alternate; }
+#backlight { color: #2f9e6e; }
+#idle_inhibitor { color: #84948d; }
+#idle_inhibitor.activated { color: #2f9e6e; background: #0e2a1e; }
+#custom-notifications { color: #a37fc7; padding: 0 9px; }
+#clock { background: rgba(55, 69, 63, 0.72); color: #d6e7df; padding: 0 11px; margin-left: 3px; }
+#tray { margin-right: 2px; padding: 0 5px; }
+#cpu:hover, #memory:hover, #custom-link:hover, #custom-ssh:hover, #custom-radio:hover, #custom-firewall:hover,
+#pulseaudio:hover, #battery:hover, #backlight:hover, #custom-notifications:hover, #clock:hover {
+    background: rgba(132, 148, 141, 0.22);
+}
+tooltip { background: rgba(7, 17, 13, 0.99); border: none; border-radius: 16px; box-shadow: 0 6px 18px rgba(7, 17, 13, 0.46); }
+tooltip label { color: #d6e7df; padding: 13px 15px; font-size: 11px; font-weight: 500; }
+@keyframes distress { to { background: #846057; } }
+#custom-art { color: #91a099; font-size: 15px; padding: 0 7px 0 4px; }
+#custom-art:hover { color: #deece5; }
+#custom-art.paused { color: #6a7a73; }
+#custom-art.generating { color: #2f9e6e; text-shadow: 0 0 7px #237351; }
+/* The badge is a thumbnail of the painting on screen; paused dims it and
+   generating shows the hourglass glyph in its place. */
+#custom-art image.thumbnail { margin: 0 2px; }
+#custom-art.paused image.thumbnail { opacity: 0.55; }
+#custom-art:hover image.thumbnail { opacity: 0.85; }
+
+/* Workspace peek: rest on a workspace and its windows appear beneath the bar. */
+popover#oldbook-peek { background: rgba(7, 17, 13, 0.98); border-radius: 16px; }
+popover#oldbook-peek contents { background: transparent; }
+popover#oldbook-peek .oldbook-peek-card { padding: 2px; }
+popover#oldbook-peek .oldbook-peek-still { background: #1e2c26; border-radius: 6px; }
+popover#oldbook-peek .oldbook-peek-title { color: #91a099; font-size: 10px; padding-top: 2px; }
+
+/* Click-through system monitor: bottom layer, visible through transparent terminals. */
+window#waybar.monitor { background: transparent; color: #c2d2ca; }
+window#waybar.monitor .modules-left {
+    background: linear-gradient(145deg, rgba(7, 17, 13, 0.68), rgba(30, 44, 38, 0.48));
+    border: 1px solid rgba(145, 160, 153, 0.25);
+    border-radius: 11px;
+    padding: 7px 7px 8px;
+}
+window#waybar.monitor #custom-conky-title,
+window#waybar.monitor #custom-conky-footer,
+window#waybar.monitor #cpu,
+window#waybar.monitor #memory,
+window#waybar.monitor #temperature,
+window#waybar.monitor #network,
+window#waybar.monitor #disk,
+window#waybar.monitor #custom-uptime {
+    background: transparent;
+    border-radius: 0;
+    margin: 0;
+    padding: 3px 5px;
+    font-size: 10px;
+}
+window#waybar.monitor #custom-conky-title,
+window#waybar.monitor #custom-conky-footer { color: #91a099; }
+window#waybar.monitor #custom-conky-title {
+    color: #2f9e6e;
+    font-weight: 800;
+    padding-bottom: 5px;
+}
+window#waybar.monitor #custom-conky-footer { padding-top: 5px; }
+window#waybar.monitor #cpu { color: #a37fc7; }
+window#waybar.monitor #memory { color: #6dcfb4; }
+window#waybar.monitor #temperature { color: #bda177; }
+window#waybar.monitor #network { color: #6dadc7; }
+window#waybar.monitor #network.disconnected { color: #84948d; }
+window#waybar.monitor #disk { color: #a9b9b2; }
+window#waybar.monitor #custom-uptime { color: #c2d2ca; }
+
+/* While a window is fullscreen the bar fades back so it stops competing with
+   the content; oldbook-waybar-dim writes the opacity into waybar-state.css.
+   GTK only sets the hover state on the module boxes, never on the window or
+   the row that holds them, so each chrome block answers the pointer itself. */
+window#waybar.top .modules-left,
+window#waybar.top .modules-center,
+window#waybar #status {
+    transition: opacity 130ms ease-out;
+}
+window#waybar.top .modules-left:hover,
+window#waybar.top .modules-center:hover,
+window#waybar #status:hover {
+    opacity: 1;
+    transition: opacity 90ms ease-out;
+}
+
+/* Music controls occupy the center naturally, without a surrounding island. */
+window#waybar.top .modules-center { margin: 0 8px; padding: 0; }
+
+/* The accent follows the painting on screen. Written by oldbook-palette;
+   imported last so its rules win over the declared accent above. */
+@import url("waybar-accent.css");
+
+/* emerald-fathoms-09a69ea72c78: typography and panel shape */
+* { font-family: "DejaVu Serif", "Symbols Nerd Font", sans-serif; }
+window#waybar.top .modules-left, window#waybar.top .modules-right { border-radius: 4px; }
+#workspaces button { padding: 0 6px; }
