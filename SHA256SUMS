@@ -524,9 +524,11 @@ eb10c6d420069029d5ff7ad632e719734fcf5ff995a0310e39dc0fb7628fd815  ./gallery/gruv
 f85591f638bd465bc5c9b98254ed7999df281d47bcdfa32615dbc173d4a4b65a  ./gallery/gruvbox-dark/2026-09-07-gruvbox-dark-yosemite-f85591f638bd.png
 31aa3787af2fba53df5d13db1ae09d95cee164983a9eac8ff5f66c8237e3479d  ./gallery/gruvbox-dark/2026-09-07-gruvbox-dark-yosemite-f932fef36c22.json
 f932fef36c22728ef6679a40431b2908e69d62e21fe673b6d7435bd6765c1eb1  ./gallery/gruvbox-dark/2026-09-07-gruvbox-dark-yosemite-f932fef36c22.png
+6bacea27ef42ac93ba3f81fe741ac9ea5111663cca51ab7c041a71962a6b90f9  ./metadata/artwork-prompts.json
 1556f6e8e14c4b4e5f682757515d95f6b3eea837982b0c2a4245b8303c6bfd29  ./metadata/gallery.json
 2c429c6c83cbe73033e6453263454ab63ed8eca6a76ccca1dc77545483037afe  ./metadata/prompts.json
 f668dbb290d9475ac79919cf66670b0d129e3717bebbd09dee937cc64ef09eb1  ./metadata/provenance.json
+2c429c6c83cbe73033e6453263454ab63ed8eca6a76ccca1dc77545483037afe  ./metadata/wallpaper-prompts.json
 769b703f896226f1896ee00af6aed5e33d55374c17ab22b5922e6ef0413d6e8f  ./themes/BUNDLES.md
 89f83ffb1e3f4a15e79e228825cce2a3230766b5a3247a645b47d8882a45255f  ./themes/README.md
 0ae0a69fcad7b8d417bf3783410c4bbae9c28683a3688e4d9a9fd91b7702a8c4  ./themes/brineglass-vigil-801c3c30e252.json
